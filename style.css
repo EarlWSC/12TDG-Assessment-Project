@@ -1,39 +1,156 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Verdana;
-}
+* {margin:0; padding:0; box-sizing:border-box; font-family: Verdana;}
+/******Navigation Bar, Dropdown Menus, Homepage, Text Title, ******/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+    overflow: hidden;
+  background-color: rgb(180, 48, 48);
 }
-.dropdown {
+/*For Javascript apparently?*/
+.show {display:block;
+}
+#homebtn {
+  text-align: left;
   position: relative;
   display: inline-block;
+  left: 10px;
+  top: 30px;
+  max-width: 150px;
+  font-size: 24px;
+  height: 10vh;
 }
-    
+.dropdown {
+  text-align: bottom;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 40px;
+  top: 10px;
+  min-width: 20px;
+  font-size: 24px;
+  height: 10vh;
+}
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  position: fixed;
+  background-color: #551818;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {
-    background-color: #f1f1f1
+.dropdown-content a:hover {background-color: #f1f1f1
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {display: block;
+}
+.dropdown:hover .dropbtn {background-color: #3e8e41;
+}
+#background {top: 100px;height: 90vh; width: 100%; background-color: rgb(180, 48, 48); margin:0;
+}
+#title {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 161, 161);
+  display: grid;
+  position: absolute;
+  top: 400px;
+  left:100px;
+}
+/****** Selection Page ******/
+.selection_page {
+  background-color: rgb(135, 76, 76)
+}
+#single_seater.linktitle{
+  box-sizing: border-box;
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+#closed_cockpit.linktitle{
+  box-sizing: border-box;
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+#rally.linktitle{
+  box-sizing: border-box;
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+#other.linktitle{
+  box-sizing: border-box;
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+.linktitle{
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+.linktitle h2{
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: -10px;
+  width:20vw;
+}
+
+.linktitle img {
+  justify-content: center;
+  width: 100%;
+}
+#selectiontitle{
+  margin:0;
+  background-color: rgb(255, 161, 161);
+    font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  top: 400px;
+  text-align: center;
+}
+/****** Info, Video Info, Summary, ******/
+.infopage-dropdown {
+  text-align: bottom;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 40px;
+  top: 10px;
+  min-width: 20px;
+  font-size: 24px;
+  height: 10vh;
+}
+.infopage-dropdown-content {
+  max-width:900px;
+  display: none;
+  background-color: #551818;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.infopage-dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
   display: block;
 }
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.infopage-dropdown-content a:hover {background-color: #f1f1f1
+}
+.infopage-dropdown:hover .infopage-dropdown-content {display: block;
+}
+.infopage-dropdown:hover .dropbtn {background-color: #3e8e41;
 }

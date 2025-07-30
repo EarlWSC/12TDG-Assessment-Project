@@ -10,26 +10,26 @@
 <!--Navigation Bar-->
 <div class="navbar">
     <ul>
-        <li id="homebtn"><a href="index.html">Discover Motorsports</a></li>
-        <li class="dropdown"><span>Single Seaters</span>
+        <a id="homebtn" href="index.html">Discover Motorsports</a>
+        <li class="dropdown"><span id="dropdowntitle">Single Seaters</span>
             <div class="dropdown-content">
                 <a href="f1.html">Formula 1</a>
                 <a href="indycar.html">IndyCar</a>
-                <a href="kwc.html">Karting World Championship</a>
+                <a href="f2.html">Formula 2</a>
                     </div></li>
-        <li class="dropdown"><span>Closed Cockpits</span>
+        <li class="dropdown"><span id="dropdowntitle">Closed Cockpits</span>
             <div class="dropdown-content">
                 <a href="wec.html">World Endurance Championship</a>
                 <a href="imsa.html">IMSA</a>
                 <a href="gt.html">GT World Challenge</a>
                 <a href="nascar.html">NASCAR</a>
                     </div></li>
-        <li class="dropdown"><span>Rallying</span>
+        <li class="dropdown"><span id="dropdowntitle">Rallying</span>
             <div class="dropdown-content">
                 <a href="wrc.html">World Rally Championship</a>
                 <a href="rallycrosswc.html">Rally Cross World Championship</a>
                     </div></li>
-        <li class="dropdown"><span>Other</span>
+        <li class="dropdown"><span id="dropdowntitle">Other</span>
             <div class="dropdown-content">
                 <a href="motogp.html">MotoGP</a>
                 <a href="formulad.html">Formula Drift</a>
@@ -37,34 +37,36 @@
                     </div></li>
     </ul>
 </div>
+<!--Homepage & Selection Page-->
 <div class="homepage">
-    <h1>Discover Motorsports</h1>
-<img src="images/placeholder1920x720.png" alt="filler image">
+    <h1 id="title">Discover Motorsports</h1>
+    <img id="background" src="gifs/lmp1hotlap.gif" alt="filler image">
+
 </div>
     <div class="selection_page">
-        <div class="single_seater">
-            <h1>Single Seater Racing</h1>
-            <a class="linktitle" href="f1.html">Formula 1 <img src="images/square_placeholder.jpg" alt=""> </a>
-            <a class="linktitle" href="indycar.html">Indycar <img src="images/square_placeholder.jpg" alt=""> </a>
-            <a class="linktitle" href="kwc.html">Karting World Championship <img src="images/square_placeholder.jpg" alt=""> </a>
+        <div id="single_seater">
+            <h1 id="selectiontitle">Single Seater Racing</h1>
+            <a id="single_seater" class="linktitle" href="f1.html"><h2 class="linktitle"> Formula 1 </h2> <img src="images/square_placeholder.jpg" alt=""></a>
+            <a id="single_seater" class="linktitle" href="indycar.html"><h2 class="linktitle"> IndyCar </h2><img src="images/square_placeholder.jpg" alt=""> </a>
+            <a id="single_seater" class="linktitle" href="f2.html"><h2 class="linktitle"> Formula 2 </h2><img src="images/square_placeholder.jpg" alt=""> </a>
         </div>
-        <div class="closed_cockpit">
-            <h1>Closed Cockpit Racing</h1>
-            <a class="linktitle" href="wec.html">World Endurance Championship <img src="images/square_placeholder.jpg" alt=""></a>
-            <a class="linktitle" href="imsa.html">IMSA Racing <img src="images/square_placeholder.jpg" alt=""></a>
-            <a class="linktitle" href="gt.html">GT World Challenge <img src="images/square_placeholder.jpg" alt=""></a>
-            <a class="linktitle" href="nascar.html">NASCAR <img src="images/square_placeholder.jpg" alt=""></a>
+        <div id="closed_cockpit">
+            <h1 id="selectiontitle">Closed Cockpit Racing</h1>
+            <a id="closed_cockpit" class="linktitle" href="wec.html"> <h2 class="linktitle">WEC</h2><img src="images/square_placeholder.jpg" alt=""></a>
+            <a id="closed_cockpit" class="linktitle" href="imsa.html"><h2 class="linktitle">IMSA Racing</h2><img src="images/square_placeholder.jpg" alt=""></a>
+            <a id="closed_cockpit" class="linktitle" href="gt.html"><h2 class="linktitle">GTWC</h2><img src="images/square_placeholder.jpg" alt=""></a>
+            <a id="closed_cockpit" class="linktitle" href="nascar.html"><h2 class="linktitle">NASCAR</h2> <img src="images/square_placeholder.jpg" alt=""></a>
         </div>
-        <div class="rally">
-            <h1>Rallying</h1>
-            <a class="linktitle" href="wrc.html">World Rally Championship <img src="images/square_placeholder.jpg" alt=""> </a>
-            <a class="linktitle" href="rallycrosswc.html">RallyCross World Championship <img src="images/square_placeholder.jpg" alt=""></a>
+        <div id="rally">
+            <h1 id="selectiontitle" >Rallying</h1>
+            <a id="rally" class="linktitle" href="wrc.html"><h2 class="linktitle">World Rally Championship</h2><img src="images/square_placeholder.jpg" alt=""> </a>
+            <a id="rally" class="linktitle" href="rallycrosswc.html"><h2 class="linktitle">RallyCross Championship</h2><img src="images/square_placeholder.jpg" alt=""></a>
         </div> 
-        <div class="other">
-            <h1>Other</h1>
-            <a class="linktitle" href="motogp.html">MotoGP <img src="images/square_placeholder.jpg" alt=""></a>
-            <a class="linktitle" href="formulad.html">Formula Drift <img src="images/square_placeholder.jpg" alt=""> </a>
-            <a class="linktitle" href="nhra.html">NHRA Drag Racing <img src="images/square_placeholder.jpg" alt=""> </a>
+        <div id="other">
+            <h1 id="selectiontitle">Other</h1>
+            <a id="other" class="linktitle" href="motogp.html"><h2 class="linktitle">MotoGP</h2><img src="images/square_placeholder.jpg" alt=""></a>
+            <a id="other" class="linktitle" href="formulad.html"><h2 class="linktitle">Formula D</h2><img src="images/square_placeholder.jpg" alt=""> </a>
+            <a id="other" class="linktitle" href="nhra.html"><h2 class="linktitle">NHRA</h2><img src="images/square_placeholder.jpg" alt=""> </a>
         </div>
     </div>
 </body>
