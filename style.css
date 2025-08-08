@@ -1,17 +1,31 @@
 * {margin:0; padding:0; box-sizing:border-box; font-family: Verdana;
 }
+body{
+  background-color: rgb(70, 70, 70);
+}
 /******Navigation Bar, Dropdown Menus, Homepage, Text Title, ******/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
     overflow: hidden;
-  background-color: rgb(180, 48, 48);
+  background-color: rgb(49, 49, 49);
 }
 /*For Javascript apparently?*/
-.show {display:block;
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  border-bottom: 20px solid #dd4646;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
 }
 #homebtn {
+  color: #dd4646;
+  text-decoration: none;
   text-align: left;
   position: relative;
   display: inline-block;
@@ -22,6 +36,7 @@ ul {
   height: 10vh;
 }
 .dropdown {
+  color: whitesmoke;
   text-align: bottom;
   position: relative;
   display: inline-block;
@@ -34,19 +49,25 @@ ul {
   height: 10vh;
 }
 .dropdown-content {
+  color: whitesmoke;
+  position:fixed;
   display: none;
-  position: fixed;
-  background-color: #551818;
+  background-color: #1c1c1c;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-bottom: 10px solid #dd4646;
+  border-left: 1px solid #dd4646;
+  border-right: 1px solid #dd4646;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .dropdown-content a {
-  color: black;
+  color: whitesmoke;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #f1f1f1
+.dropdown-content a:hover {background-color: rgb(70, 70, 70)
 }
 .dropdown:hover .dropdown-content {display: block;
 }
@@ -57,16 +78,13 @@ ul {
 #title {
   font-size: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(255, 161, 161);
+  color: #dd4646;
   display: grid;
   position: absolute;
   top: 400px;
   left:100px;
 }
 /****** Selection Page ******/
-.selection_page {
-  background-color: rgb(135, 76, 76)
-}
 #single_seater.linktitle{
   box-sizing: border-box;
   width: 33%;
@@ -116,18 +134,26 @@ ul {
 }
 #selectiontitle{
   margin:0;
-  background-color: rgb(255, 161, 161);
-    font-size: 50px;
+  background-color: rgba(221, 70, 70, 0.3);
+  font-size: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
-  top: 400px;
   text-align: center;
 }
 /****** Info, Video Info, Summary, Image Info ******/
+.summary {
+  background-color: rgb(135, 76, 76);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+  left: 700px;
+  gap:24px;
+  top:650px; 
+  position: absolute;
+  max-width: 50vw;
+}
 .videoinfo {
   display: flex;
   flex-direction: row;
-  gap: 24px;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: transparent;
@@ -143,20 +169,27 @@ ul {
   height: auto;
   display: block;
 }
+.calendar {
+  background-color: rgba(0,0,0);
+}
+.calendar img {
+  max-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  margin-left:350px;
+  position: relative;
+}
 .infopage-dropdown   {
-  background-color: royalblue;
-  padding-left: 20px;
-  padding-right: 20px;
-  left: 30px;
-  top: 10px;
   min-width: 20px;
   font-size: 24px;
 }
 .infopage-dropdown-content {
+  left:10px;
+  position:absolute;
   box-sizing: border-box;
-  max-width:100vh;
+  max-width:100vw;
+  overflow-y: auto;
   display: none;
-  background-color: #551818;
+  background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
