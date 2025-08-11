@@ -8,8 +8,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-    overflow: hidden;
+  overflow: hidden;
   background-color: rgb(49, 49, 49);
+}
+li {
+  list-style: none;
 }
 /*For Javascript apparently?*/
 .navbar{
@@ -85,6 +88,16 @@ ul {
   left:100px;
 }
 /****** Selection Page ******/
+/* Make all images in .selection_page the same size and box shape */
+.selection_page img {
+  width: 180px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto;
+}
 #single_seater.linktitle{
   box-sizing: border-box;
   width: 33%;
@@ -205,11 +218,24 @@ ul {
 }
 .infopage-dropdown:hover .dropbtn {background-color: #3e8e41;
 }
+.driversmanufacturers {
+  color:antiquewhite;
+  font-size: 24px;
+  width: 100%;
+  max-width: 100%;
+
+}
 .Gallery img {
+  /* Make all images in .Gallery the same size and box shape */
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto;
   width: 100vh;
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 .Gallery {
   display: flex;
