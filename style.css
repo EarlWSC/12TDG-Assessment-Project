@@ -20,14 +20,13 @@ li {
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 1;
-  border-bottom: 20px solid #dd4646;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  overflow: hidden;
+  z-index: 2;
+  border-bottom: 20px solid #951616;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 50px;
 }
-#homebtn {
-  color: #dd4646;
+.homebtn {
+  color: #951616;
   text-decoration: none;
   text-align: left;
   position: relative;
@@ -57,10 +56,10 @@ li {
   display: none;
   background-color: #1c1c1c;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-bottom: 10px solid #dd4646;
-  border-left: 1px solid #dd4646;
-  border-right: 1px solid #dd4646;
+  z-index: 4;
+  border-bottom: 10px solid #951616;
+  border-left: 1px solid #951616;
+  border-right: 1px solid #951616;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -76,12 +75,13 @@ li {
 }
 .dropdown:hover .dropbtn {background-color: #3e8e41;
 }
-#background {top: 100px;height: 90vh; width: 100%; background-color: rgb(180, 48, 48); margin:0;
+.background {top: 100px;height: 90vh; width: 100%; background-color: rgb(180, 48, 48); margin:0;
 }
-#title {
+.title {
+  z-index:1;
   font-size: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #dd4646;
+  color: #951616;
   display: grid;
   position: absolute;
   top: 400px;
