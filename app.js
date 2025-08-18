@@ -10,7 +10,7 @@ tl.fromTo(background, 1.5, {x: -2000}, {x: 0},"-=0.9")
 .fromTo(title, 1, {opacity: 0}, {opacity: 1}, "-=.75")
 .fromTo(homebtn, 1, {x: -200}, {x:0}, "-=.75");
 
-const linkTitles = document.querySelectorAll('.selection_page .linktitle');
+const linkTitles = document.querySelectorAll('.selection_page .linktitle','videoinfo', 'img');
 linkTitles.forEach(el => {
 	el.style.opacity = 0;
 	el.style.transform = 'scale(0.8)';
