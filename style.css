@@ -8,7 +8,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: rgb(49, 49, 49);
 }
 li {
@@ -37,14 +36,24 @@ li {
   font-size: 24px;
   height: 10vh;
 }
+.subtitle{
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  display: grid;
+  position: absolute;
+  top: 470px;
+  left:100px;
+}
 .dropdown {
+  text-decoration: none;
   color: whitesmoke;
   text-align: bottom;
   position: relative;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 20px;
-  left: 40px;
+  left: 80px;
   top: 10px;
   min-width: 20px;
   font-size: 24px;
@@ -88,7 +97,13 @@ li {
   left:100px;
 }
 /****** Selection Page ******/
-/* Make all images in .selection_page the same size and box shape */
+.selection_page .linktitle {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
+}
+.selection_page .linktitle:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
 .selection_page img {
   width: 180px;
   height: 340px;
@@ -156,13 +171,25 @@ li {
 /****** Info, Video Info, Summary, Image Info ******/
 .summary {
   background-color: rgb(135, 76, 76);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 24px;
-  left: 700px;
+  left: 1100px;
   gap:24px;
-  top:650px; 
+  top:200px; 
   position: absolute;
-  max-width: 50vw;
+  min-height: 70vh;
+  max-width: 20vw;
+}
+.summary p{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.summary a{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
 .videoinfo {
   display: flex;
@@ -200,7 +227,6 @@ li {
   position:absolute;
   box-sizing: border-box;
   max-width:100vw;
-  overflow-y: auto;
   display: none;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -214,7 +240,7 @@ li {
 }
 .infopage-dropdown-content a:hover {background-color: #f1f1f1
 }
-.infopage-dropdown:hover .infopage-dropdown-content {display: block;
+.infopage-dropdown:hover .infopage-dropdown-content {display: block; z-index: 2;
 }
 .infopage-dropdown:hover .dropbtn {background-color: #3e8e41;
 }
@@ -226,10 +252,9 @@ li {
 
 }
 .Gallery img {
-  /* Make all images in .Gallery the same size and box shape */
   width: 250px;
   height: 300px;
-  object-fit: cover;
+  object-fit:initial;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   display: block;
@@ -240,8 +265,120 @@ li {
 .Gallery {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 10px;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: transparent;
+}
+/****** Quiz Page ******/
+.dropdown#quiz {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: bottom;
+  position: relative;
+  display: inline-block;
+  left: 150px;
+  top: 10px;
+  min-width: 20px;
+  font-size: 25px;
+  height: 10vh;
+}
+.quizdone {
+  background-color: rgba(221, 70, 70, 0.3);
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+/* --- Quiz Styles --- */
+.quiz {
+    background: rgba(49,49,49,0.95);
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.quizheader .title {
+    color: #951616;
+    margin-bottom: 24px;
+}
+.quiz .subtitle {
+    display: inline-block;
+    background: #951616;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 18px 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.quiz .subtitle:hover {
+    background: #c0392b;
+}
+.questions h2 {
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 12px;
+}
+.buttons button {
+    background: #951616;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    min-width: 200px;
+}
+.buttons button:hover:not(:disabled) {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+.buttons button.correct {
+    background: #27ae60 !important;
+    color: #fff;
+}
+.buttons button.wrong {
+    background: #c0392b !important;
+    color: #fff;
+}
+.quizdone {
+    margin-top: 24px;
+    font-size: 1.2rem;
+    color: #ffd700;
+    display: none;
+}
+.score {
+    margin-top: 12px;
+    font-size: 1.1rem;
+}
+#restart {
+    background: #951616;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+}
+#restart:hover {
+    background: #c0392b;
+}
+.quizheader .hide-bg {
+    display: none !important;
 }
