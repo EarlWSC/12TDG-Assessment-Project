@@ -1,25 +1,91 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Quiz data (add an 'img' property for each question if you want an image)
-    const quizQuestions = [
-        {
-            question: "Which team has the most F1 Constructors' Championships?",
-            answers: ["Ferrari", "Mercedes", "McLaren", "Red Bull"],
-            correct: 0,
-            img: "images/f1_wcc_trophy.png"
-        },
-        {
-            question: "Which racing series is known for the 24 Hours of Le Mans?",
-            answers: ["Formula 1", "WEC", "IndyCar", "MotoGP"],
-            correct: 1,
-            img: "images/wec_lemans_quiz.jpg"
-        },
-        {
-            question: "Who won the 2021 F1 World Drivers' Championship?",
-            answers: ["Lewis Hamilton", "Sebastian Vettel", "Max Verstappen", "Charles Leclerc"],
-            correct: 2,
-            img: "images/maxvlewis_quiz.jpg"
-        }
-    ];
+const quizQuestions = [
+    {
+        question: "Which team has the most F1 Constructors' Championships?",
+        answers: ["Ferrari", "Mercedes", "McLaren", "Red Bull"],
+        correct: 0,
+        img: "images/f1_wcc_trophy.png"
+    },
+    {
+        question: "Which racing series is known for the 24 Hours of Le Mans?",
+        answers: ["Formula 1", "WEC", "IndyCar", "MotoGP"],
+        correct: 1,
+        img: "images/wec_lemans_quiz.jpg"
+    },
+    {
+        question: "Who won the 2021 F1 World Drivers' Championship?",
+        answers: ["Lewis Hamilton", "Sebastian Vettel", "Max Verstappen", "Charles Leclerc"],
+        correct: 2,
+        img: "images/maxvlewis_quiz.jpg"
+    },
+    {
+        question: "Which manufacturer supplies engines for all Formula 2 cars?",
+        answers: ["Renault", "Cosworth", "Honda", "Mecachrome"],
+        correct: 3,
+        img: "images/f2_engine_quiz.jpg"
+    },
+    {
+        question: "Which race is the crown jewel of the IndyCar Series?",
+        answers: ["Daytona 500", "Indy 500", "Long Beach GP", "Texas GP"],
+        correct: 1,
+        img: "images/indy500_quiz.jpg"
+    },
+    {
+        question: "Which class in WEC features hybrid-powered prototypes?",
+        answers: ["GT3", "Hypercar", "LMP2", "GTE-Pro"],
+        correct: 1,
+        img: "images/wec_hypercar_quiz.jpg"
+    },
+    {
+        question: "What is the top class in IMSA as of 2024?",
+        answers: ["GTLM", "DPi", "GTP", "LMP1"],
+        correct: 2,
+        img: "images/imsa_gtp_quiz.jpg"
+    },
+    {
+        question: "Which driver has the most NASCAR Cup Series championships?",
+        answers: ["Jeff Gordon", "Richard Petty", "Dale Earnhardt", "Jimmie Johnson"],
+        correct: 3,
+        img: "images/nascar_champs_quiz.jpg"
+    },
+    {
+        question: "Which car class is used in GT World Challenge?",
+        answers: ["LMP1", "GT3", "Touring Cars", "Formula Cars"],
+        correct: 1,
+        img: "images/gtworld_gt3_quiz.jpg"
+    },
+    {
+        question: "What surface is Rally Sweden primarily run on?",
+        answers: ["Gravel", "Asphalt", "Snow and Ice", "Mixed Terrain"],
+        correct: 2,
+        img: "images/wrc_sweden_quiz.jpg"
+    },
+    {
+        question: "What is unique about Rallycross circuits?",
+        answers: ["They combine gravel and tarmac","They are run entirely on snow", "They are only street circuits", "They use electric cars exclusively"],
+        correct: 0,
+        img: "images/wrx_surface_quiz.jpg"
+    },
+    {
+        question: "What is the engine displacement of MotoGP bikes?",
+        answers: ["500cc", "800cc", "1000cc", "1200cc"],
+        correct: 2,
+        img: "images/motogp_engine_quiz.jpg"
+    },
+    {
+        question: "What is the primary judging criteria in Formula Drift?",
+        answers: ["Lap time", "Tire wear", "Fuel efficiency","Angle, speed, and style"],
+        correct: 3,
+        img: "images/formuladrift_style_quiz.jpg"
+    },
+    {
+        question: "What is the fastest class in NHRA drag racing?",
+        answers: ["Top Fuel", "Funny Car", "Pro Stock", "Super Comp"],
+        correct: 0,
+        img: "images/nhra_topfuel_quiz.jpg"
+    }
+];
 
     const quizDiv = document.querySelector('.quiz');
     const beforeQuizDiv = document.querySelector('.beforequiz');

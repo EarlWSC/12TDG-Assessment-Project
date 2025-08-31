@@ -1,7 +1,11 @@
-* {margin:0; padding:0; box-sizing:border-box; font-family: Verdana;
+@font-face {
+  font-family: 'Etna';
+  src: url('./etna/etna-free-font.otf') format('truetype');
+}
+* {margin:0; padding:0; box-sizing:border-box; 
 }
 body{
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(70, 70, 70); font-family: 'Etna'; line-height: 1.4;
 }
 /******Navigation Bar, Dropdown Menus, Homepage, Text Title, ******/
 ul {
@@ -13,7 +17,6 @@ ul {
 li {
   list-style: none;
 }
-/*For Javascript apparently?*/
 .navbar{
   position: fixed;
   top: 0;
@@ -33,16 +36,16 @@ li {
   left: 10px;
   top: 30px;
   max-width: 150px;
-  font-size: 24px;
+  font-size: 35px;
   height: 10vh;
+  line-height: 1;
 }
 .subtitle{
   font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
   display: grid;
   position: absolute;
-  top: 470px;
+  top: 65%;
   left:100px;
 }
 .dropdown {
@@ -56,7 +59,7 @@ li {
   left: 80px;
   top: 10px;
   min-width: 20px;
-  font-size: 24px;
+  font-size: 30px;
   height: 10vh;
 }
 .dropdown-content {
@@ -66,9 +69,9 @@ li {
   background-color: #1c1c1c;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 4;
-  border-bottom: 10px solid #951616;
-  border-left: 1px solid #951616;
-  border-right: 1px solid #951616;
+  border-bottom: 10px solid rgb(134, 43, 43);
+  border-left: 1px solid rgb(134, 43, 43);
+  border-right: 1px solid rgb(134, 43, 43);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -84,12 +87,12 @@ li {
 }
 .dropdown:hover .dropbtn {background-color: #3e8e41;
 }
-.background {top: 100px;height: 90vh; width: 100%; background-color: rgb(180, 48, 48); margin:0;
+.background {top: 100px;height: 90vh; width: 100%; background-color: rgb(134, 43, 43); margin:0;
 }
 .title {
+  background-color: rgba(255, 0, 0, 0.123);
   z-index:1;
-  font-size: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100px;
   color: #951616;
   display: grid;
   position: absolute;
@@ -97,13 +100,7 @@ li {
   left:100px;
 }
 /****** Selection Page ******/
-.selection_page .linktitle {
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
-}
-.selection_page .linktitle:hover {
-  transform: scale(1.05);
-  z-index: 2;
-}
+
 .selection_page img {
   width: 180px;
   height: 340px;
@@ -141,11 +138,12 @@ li {
   display: inline-block;
   padding: 20px;
 }
-.linktitle{
+.selection_page .linktitle{
   box-sizing: border-box;
   text-align: center;
   display: inline-block;
   padding: 20px;
+  
 }
 .linktitle h2{
   font-size: 35px;
@@ -155,41 +153,39 @@ li {
   margin: -10px;
   width:20vw;
 }
-
 .linktitle img {
   justify-content: center;
   width: 100%;
 }
 #selectiontitle{
   margin:0;
-  background-color: rgba(221, 70, 70, 0.3);
+  background-color: rgb(134, 43, 43);
   font-size: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 /****** Info, Video Info, Summary, Image Info ******/
 .summary {
-  background-color: rgb(135, 76, 76);
-  font-size: 24px;
-  left: 1100px;
+  background-color: rgb(53, 53, 53);
+  border: 4px solid #951616;
+  right: 5%;
   gap:24px;
   top:200px; 
   position: absolute;
   min-height: 70vh;
-  max-width: 20vw;
+  max-width: 23vw;
 }
 .summary p{
   margin-left: 25px;
   margin-right: 25px;
-  font-size: 25px;
+  font-size: 21px;
   color: rgb(255, 255, 255);
 }
 .summary a{
   margin-left: 25px;
   margin-right: 25px;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(133, 208, 243);
 }
 .videoinfo {
   display: flex;
@@ -199,7 +195,7 @@ li {
   background-color: transparent;
 }
 #videoinfo {
-  background-color: rosybrown;
+  background-color: rgb(90, 0, 0);
   width: 300px;
   max-width: 100%;
 }
@@ -212,7 +208,7 @@ li {
 .calendar img {
   z-index:-1;
   max-height: 100vh;
-  margin-left:350px;
+  left:30%;
   position: relative;
   background-color: rgb(0, 0, 0);
 }
@@ -226,12 +222,20 @@ li {
   box-sizing: border-box;
   max-width:100vw;
   display: none;
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: rgb(53, 53, 53);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border: 4px solid #951616;
 }
-.infopage-dropdown-content a {
-  color: black;
+.infopage-dropdown-content p {
+  color: white;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+}
+.infopage-dropdown-content a { 
   padding: 12px 12px;
   text-decoration: none;
   display: inline-block;
@@ -243,8 +247,8 @@ li {
 .infopage-dropdown:hover .dropbtn {background-color: #3e8e41;
 }
 .driversmanufacturers {
-  color:antiquewhite;
-  font-size: 24px;
+  color:rgb(255, 255, 255);
+  font-size: 34px;
   width: 100%;
   max-width: 100%;
 
@@ -271,7 +275,6 @@ li {
 /****** Quiz Page ******/ 
 .subtitle#start-quiz-btn{
   font-size: 40px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(180, 48, 48);
   background: none;
   border: none;
