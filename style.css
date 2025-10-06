@@ -45,7 +45,7 @@ li {
   color: #ffffff;
   display: grid;
   position: absolute;
-  top: 65%;
+  top: 70%;
   left:100px;
 }
 .dropdown {
@@ -98,6 +98,18 @@ li {
   position: absolute;
   top: 400px;
   left:100px;
+  max-width: 90vw;
+}
+.rallytitle {
+  background-color: rgba(255, 0, 0, 0.123);
+  z-index:1;
+  font-size: 100px;
+  color: #951616;
+  display: grid;
+  position: absolute;
+  top: 300px;
+  left:100px;
+  max-width: 50vw;
 }
 /****** Selection Page ******/
 
@@ -173,18 +185,19 @@ li {
   top:200px; 
   position: absolute;
   min-height: 70vh;
+  max-height: 70vh;
   max-width: 23vw;
 }
 .summary p{
-  margin-left: 25px;
+   margin-left: 25px;
   margin-right: 25px;
-  font-size: 21px;
   color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 .summary a{
   margin-left: 25px;
   margin-right: 25px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(133, 208, 243);
 }
 .videoinfo {
