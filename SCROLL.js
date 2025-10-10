@@ -1,4 +1,4 @@
-const fadeScaleSelectors = ['.selection_page .linktitle', '.video-section','calendar', '.Gallery', '.racephoto', '.calendar img'];
+const fadeScaleSelectors = ['.selection_page .linktitle', '.video-section','calendar', '.racephoto', '.calendar img'];
 const fadeScaleEls = [];
 
 // Initialize fadeScale elements
@@ -10,7 +10,7 @@ fadeScaleSelectors.forEach(sel => {
     fadeScaleEls.push(el);
 
     // Add hover effect
-    if (sel === '.selection_page .linktitle', '.video-section', '.racephoto', '.calendar img') {
+    if (sel === '.selection_page .linktitle', '.video-section video', '.racephoto', '.calendar img') {
       el.addEventListener('mouseover', () => {
         el.style.transform = 'scale(1.05)';
         el.style.zIndex = '2';

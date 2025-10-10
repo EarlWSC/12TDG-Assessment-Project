@@ -272,23 +272,20 @@ li {
 
 }
 .Gallery img {
-  width: 250px;
-  height: 300px;
-  object-fit:contain;
+  border: none;
+  background: transparent;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   display: block;
   margin: 0 auto;
   width: 100vh;
-  max-width: 100%;
+  min-width: 100vh;
 }
 .Gallery {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction:column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: transparent;
 }
 /****** Quiz Page ******/ 
 .subtitle#start-quiz-btn{
