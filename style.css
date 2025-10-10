@@ -218,10 +218,11 @@ li {
   height: auto;
   display: block;
 }
-.calendar img {
+.calendar {
   z-index:-1;
   max-height: 100vh;
-  left:30%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   background-color: rgb(0, 0, 0);
 }
@@ -269,7 +270,7 @@ li {
 .Gallery img {
   width: 250px;
   height: 300px;
-  object-fit:initial;
+  object-fit:contain;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   display: block;
