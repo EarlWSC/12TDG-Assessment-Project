@@ -1,4 +1,4 @@
-const fadeScaleSelectors = ['.selection_page .linktitle', '.video-section','calendar', '.racephoto', '.calendar img'];
+const fadeScaleSelectors = ['.selection_page .linktitle', '.video-section', '.racephoto', '.calendar img'];
 const fadeScaleEls = [];
 
 // Initialize fadeScale elements

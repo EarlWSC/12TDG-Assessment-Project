@@ -324,13 +324,13 @@ li {
   align-items: flex-start;
 }
 /****** Quiz Page ******/ 
-.subtitle#start-quiz-btn{
+#start-quiz-btn{
   font-size: 40px;
   color: rgb(180, 48, 48);
   background: none;
   border: none;
 }
-.subtitle#start-quiz-btn:hover{
+#start-quiz-btn:hover{
   cursor: pointer;
   color: rgb(255, 215, 0);
 }
