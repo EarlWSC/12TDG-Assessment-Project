@@ -56,14 +56,14 @@ const quizQuestions = [
         img: "images/gtwc_quiz.jpg"
     },
     {
-        question: "What surface is Rally Sweden primarily run on?",
-        answers: ["Gravel", "Asphalt", "Snow and Ice", "Mixed Terrain"],
+        question: "What surface is Rally Finland primarily run on?",
+        answers: ["Gravel", "Asphalt", "Snow and Ice", "Mixed Surfaces"],
         correct: 2,
         img: "images/wrc_quiz.jpg"
     },
     {
         question: "What is unique about Rallycross circuits?",
-        answers: ["They combine gravel and tarmac","They are wide circuits", "They are only run during the rain", "They use gravel, sand and tarmac"],
+        answers: ["They combine gravel and tarmac","They are slippery circuits", "They only run during the day", "They combine sand and tarmac"],
         correct: 0,
         img: "images/wrx_quiz.jpg"
     },

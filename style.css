@@ -45,7 +45,7 @@ li {
   color: #ffffff;
   display: grid;
   position: absolute;
-  top: 70%;
+  top: 57%;
   left:100px;
 }
 .dropdown {
@@ -96,7 +96,7 @@ li {
   color: #951616;
   display: grid;
   position: absolute;
-  top: 400px;
+  top: 40%;
   left:100px;
   max-width: 90vw;
 }
@@ -325,7 +325,6 @@ li {
 }
 /****** Quiz Page ******/ 
 #start-quiz-btn{
-  font-size: 40px;
   color: rgb(180, 48, 48);
   background: none;
   border: none;
@@ -442,9 +441,9 @@ li {
 }
 .quiz-q-img {
   max-width: 50vw;
-  min-width: 50vw;
+  min-width: 60vw;
   max-height: 60vh;
-  object-fit: cover;
+  object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
     background: #111;
