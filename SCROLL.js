@@ -18,7 +18,7 @@ fadeScaleSelectors.forEach(sel => {
       el.addEventListener('mouseout', () => {
         el.style.transform = 'scale(1)';
         el.style.zIndex = '1';
-      });
+      });   
     }
   });
 });
