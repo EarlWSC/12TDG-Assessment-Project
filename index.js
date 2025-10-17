@@ -57,8 +57,8 @@ const quizQuestions = [
     },
     {
         question: "What surface is Rally Finland primarily run on?",
-        answers: ["Gravel", "Asphalt", "Snow and Ice", "Mixed Surfaces"],
-        correct: 2,
+        answers: ["Gravel", "Dirt", "Snow and Ice", "Mixed Surfaces"],
+        correct: 1,
         img: "images/wrc_quiz.jpg"
     },
     {
